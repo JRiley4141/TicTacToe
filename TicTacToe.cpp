@@ -33,9 +33,12 @@ void TicTacToe::DisplayBoard(){
 }
 
 
+
 int main(){
     TicTacToe game;
     char player = 'X';
-    game.DisplayBoard();
-  
+    game.CreateBoard();
+
+    game.Displayboard();   
 }
+
