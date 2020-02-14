@@ -1,2 +1,2 @@
 # TicTacToe
-TicTacToe game created by Jenn Riley &amp; Michelle
+TicTacToe game created by Jenn Riley &amp; Michelle Tran
