@@ -8,6 +8,7 @@
 
 using namespace std;
 
+//CreateBoard
 TicTacToe::TicTacToe(){
     for (int r = 0; r < 3; r++) {
         for (int c = 0; c < 3; c++) {
@@ -16,7 +17,7 @@ TicTacToe::TicTacToe(){
     }
 }
 
-void TicTacToe::CreateBoard(){
+void TicTacToe::DisplayBoard(){
     system("cls");
     cout<< "********** Let's Play Tic Tac Toe **********"<< endl;
     
@@ -32,10 +33,9 @@ void TicTacToe::CreateBoard(){
 }
 
 
-
 int main(){
     TicTacToe game;
     char player = 'X';
-    game.CreateBoard();
+    game.DisplayBoard();
   
 }
