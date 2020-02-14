@@ -1,17 +1,17 @@
 #Jennifer Riley
 #TicTacToe
 
+CXX = g++
+CXXFLAGS	= -std=c++17 -Wall
 
+all: main
 
-CXX = g++  # the compiler
-CXXFLAGS = -std=c++17 -Wall  # flags for the compiler (use c++17 standards, turn on all optional warnings)
+main: TicTacToe.o
+	$(CXX) $(CXXFLAGS) TicTacToe.o -o main
 
-all: TicTacToe
+TicTacToe.o: TicTacToe.cpp
+	$(CXX) $(CXXFLAGS) -c TicTacToe.cpp
 
 clean:
-	rm TicTacToe
-
-main: TicTacToe.cpp
-	$(CXX) $(CXXFLAGS) TicTacToe.cpp -o TicTacToe
-
+	rm TicTacToe.o main
 
