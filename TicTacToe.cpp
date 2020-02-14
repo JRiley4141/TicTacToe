@@ -8,6 +8,7 @@
 
 using namespace std;
 
+//CreateBoard
 TicTacToe::TicTacToe(){
     for (int r = 0; r < 3; r++) {
         for (int c = 0; c < 3; c++) {
@@ -30,6 +31,7 @@ void TicTacToe::DisplayBoard(){
     }
     cout << endl;
 }
+
 
 
 void TicTacToe::GetPlayerChoice(int move){
@@ -79,12 +81,12 @@ void TicTacToe::GetPlayerChoice(int move){
 
 
 
+
 int main(){
     TicTacToe game;
     char player = 'X';
     game.CreateBoard();
 
-    game.Displayboard();  
-  
+    game.Displayboard();   
 }
 
