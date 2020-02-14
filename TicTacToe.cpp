@@ -38,6 +38,13 @@ void TicTacToe::GetPlayerChoice(int move){
     cout <<"\n Enter your move: \n" << endl;
     cin >> move;
 
+}
+
+void TicTacToe::GetPlayerChoice(int move){
+    char player = 'X';
+    cout <<"\n Enter your move: \n" << endl;
+    cin >> move;
+
     
     if( move == 1)
     {
@@ -76,6 +83,7 @@ void TicTacToe::GetPlayerChoice(int move){
         board[2][2] = player;
     }
 }
+
 
 void TicTacToe::PlayerSwitch(char player){
     if( player == 'X'){
