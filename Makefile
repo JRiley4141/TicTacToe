@@ -14,4 +14,3 @@ TicTacToe.o: TicTacToe.cpp
 
 clean:
 	rm TicTacToe.o main
-
