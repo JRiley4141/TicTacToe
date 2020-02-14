@@ -16,7 +16,7 @@ TicTacToe::TicTacToe(){
     }
 }
 
-void TicTacToe::CreateBoard(){
+void TicTacToe::DisplayBoard(){
     system("cls");
     cout<< "********** Let's Play Tic Tac Toe **********"<< endl;
     
