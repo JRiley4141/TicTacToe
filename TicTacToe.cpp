@@ -32,18 +32,48 @@ void TicTacToe::CreateBoard(){
 }
 
 
-void DisplayBoard()
-{
-    cout << "---------------------" << endl << endl;
-    cout << "     |     |     " << endl;
-    cout << "  " << board[0][0] << "  |  " << board[0][1] << "  |  " << board[0][2] << endl;
-    cout << "_____|_____|_____" << endl;
-    cout << "     |     |     " << endl;
-    cout << "  " << board[1][0] << "  |  " << board[1][1] << "  |  " << board[1][2] << endl;
-    cout << "_____|_____|_____" << endl;
-    cout << "     |     |     " << endl;
-    cout << "  " << board[2][0] << "  |  " << board[2][1] << "  |  " << board[2][2] << endl;
-    cout << "     |     |     " << endl;
+void TicTacToe::GetPlayerChoice(int move){
+    char player = 'X';
+    cout <<"\n Enter your move: \n" << endl;
+    cin >> move;
+
+    
+    if( move == 1)
+    {
+        board[0][0] = player;
+    }
+    else if(move == 2)
+    {
+        board[0][1] = player;
+    }
+    else if(move == 3)
+    {
+        board[0][2] = player;
+    }
+    else if(move == 4)
+    {
+        board[1][0] = player;
+    }
+    else if(move == 5)
+    {
+        board[1][1] = player;
+    }
+    else if(move == 6)
+    {
+        board[1][2] = player;
+    }
+    else if(move == 7)
+    {
+        board[2][0] = player;
+    }
+    else if(move == 8)
+    {
+        board[2][1] = player;
+    }
+    else if(move == 9)
+    {
+        board[2][2] = player;
+    }
 }
 
 
