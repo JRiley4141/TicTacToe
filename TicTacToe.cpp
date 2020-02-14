@@ -32,13 +32,6 @@ void TicTacToe::DisplayBoard(){
     cout << endl;
 }
 
-void TicTacToe::GetPlayerChoice(int move){
-    char player = 'X';
-
-    cout <<"\n Enter your move: \n" << endl;
-    cin >> move;
-
-}
 
 void TicTacToe::GetPlayerChoice(int move){
     char player = 'X';
