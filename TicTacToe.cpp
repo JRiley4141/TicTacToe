@@ -31,6 +31,7 @@ void TicTacToe::CreateBoard(){
     cout << endl;
 }
 
+
 void DisplayBoard()
 {
     cout << "---------------------" << endl << endl;
@@ -46,8 +47,14 @@ void DisplayBoard()
 }
 
 
+
+
 int main(){
     TicTacToe game;
     char player = 'X';
     game.CreateBoard();
+
     game.Displayboard();  
+  
+}
+

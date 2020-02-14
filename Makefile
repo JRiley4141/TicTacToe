@@ -13,3 +13,4 @@ TicTacToe.o: TicTacToe.cpp
 	$(CXX) $(CXXFLAGS) -c TicTacToe.cpp
 
 clean:
+	rm TicTacToe.o main
