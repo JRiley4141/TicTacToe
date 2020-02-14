@@ -32,7 +32,13 @@ void TicTacToe::DisplayBoard(){
     cout << endl;
 }
 
+void TicTacToe::GetPlayerChoice(int move){
+    char player = 'X';
 
+    cout <<"\n Enter your move: \n" << endl;
+    cin >> move;
+
+}
 
 void TicTacToe::GetPlayerChoice(int move){
     char player = 'X';
@@ -79,14 +85,21 @@ void TicTacToe::GetPlayerChoice(int move){
 }
 
 
-
-
+void TicTacToe::PlayerSwitch(char player){
+    if( player == 'X'){
+        player = 'O';
+    }
+    else if (player == 'O'){
+        player = 'X';
+    }
+}
 
 int main(){
-    TicTacToe game;
-    char player = 'X';
-    game.CreateBoard();
-
-    game.Displayboard();   
+    while(game.IllegalPlay() == false)
+    {
+        game.DisplayBoard();
+        game.GetPlayerChoice(player);
+        game.PlayerSwitch(player);
+    }
 }
 
