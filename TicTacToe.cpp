@@ -9,6 +9,7 @@
 using namespace std;
 
 //CreateBoard
+//Constructor
 TicTacToe::TicTacToe(){
     for (int r = 0; r < 3; r++) {
         for (int c = 0; c < 3; c++) {
@@ -17,6 +18,8 @@ TicTacToe::TicTacToe(){
     }
 }
 
+//Dispaly the board
+//Doesn't return anything
 void TicTacToe::DisplayBoard(){
     system("cls");
     cout<< "********** Let's Play Tic Tac Toe **********"<< endl;
@@ -32,7 +35,8 @@ void TicTacToe::DisplayBoard(){
     cout << endl;
 }
 
-
+//Will check user's input and place marker based on input
+//Doesn't return anything
 void TicTacToe::GetPlayerChoice(int move){
     char player = 'X';
     cout <<"\n Enter your move: \n" << endl;
@@ -77,7 +81,9 @@ void TicTacToe::GetPlayerChoice(int move){
     }
 }
 
-
+//Switch between players
+//Not completely working
+//Doesn't return anything
 void TicTacToe::PlayerSwitch(char player){
     if( player == 'X'){
         player = 'O';
@@ -87,6 +93,8 @@ void TicTacToe::PlayerSwitch(char player){
     }
 }
 
+//Check to see if the user has input a space that has already been taken
+//return true or false
 bool TicTacToe::IllegalPlay(){
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
@@ -98,6 +106,8 @@ bool TicTacToe::IllegalPlay(){
     }
 }
 
+
+//main function
 int main(){
     while(game.IllegalPlay() == false)
     {
