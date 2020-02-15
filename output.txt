@@ -1,0 +1,41 @@
+********** Let's Play Tic Tac Toe **********
+   A    B    C                         
+1  _    _    _  
+2  _    _    _  
+3  _    _    _  
+
+
+ Enter your move: 
+
+1
+********** Let's Play Tic Tac Toe **********
+   A    B    C                         
+1  X    _    _  
+2  _    _    _  
+3  _    _    _  
+
+
+ Enter your move: 
+
+5
+********** Let's Play Tic Tac Toe **********
+   A    B    C                         
+1  X    _    _  
+2  _    X    _  
+3  _    _    _  
+
+
+ Enter your move: 
+
+3
+********** Let's Play Tic Tac Toe **********
+   A    B    C                         
+1  X    _    X  
+2  _    X    _  
+3  _    _    _  
+
+
+ Enter your move: 
+
+
+Our switch player function isn't working correctly. Instead of alternating bewtween player 'x' and player 'o', it keeps outputing player x.
